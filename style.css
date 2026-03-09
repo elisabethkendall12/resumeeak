@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Liz's Daily Planner</title>
+
+  <style>
+    body {
+      font-family: Merriweather, sans-serif;
+      background-color: lightpink;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: lightpink;
+      color: black;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: hotpink;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: hotpink;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    img {
+      display: block;
+      margin: 15px 0;
+      border-radius: 6px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    form input {
+      padding: 6px;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #2980b9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: hotpink;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Liz's Daily Planner</h1>
+    <p>A website that tracks my daily tasks and personal goals.</p>
+    <p><strong>AI Use Disclosure:</strong> Tool: ChatGPT (free version)</p>
+    <p><strong>Purpose:</strong> Helped me with color and styling.</p>
+    <p><strong>Human Role:</strong> I inserted the recommended CSS code and modified the code to work on my page.</p>
+  </header>
+
+  <nav>
+    <a href="#tasks">Go to today’s tasks</a>
+  </nav>
+
+  <main>
+
+    <section id="tasks">
+      <h2>Daily Motivation</h2>
+
+      <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTknps1vTePYMqUfSuwMy8nW4EVillZPaHerw&s" 
+        alt="Inspirational quote about staying productive"
+        width="250"
+      >
+
+      <h3>Repeating Tasks</h3>
+      <ul>
+        <li>Morning routine</li>
+        <li>Classes</li>
+        <li>Homework</li>
+        <li>Night routine</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tasks for Today</h2>
+      <p>Use the form below to add a task for today.</p>
+
+      <form>
+        <label for="task">Task description</label><br>
+        <input type="text" id="task" name="task" required><br>
+
+        <label for="time">Time</label><br>
+        <input type="time" id="time" name="time"><br>
+
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>All done!</p>
+  </footer>
+
+</body>
+</html>
